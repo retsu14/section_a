@@ -10,7 +10,7 @@ class StudentController
     public function __construct(
         private StudentService $student
     ) {}
-    
+
     public function show()
     {
         return $this->student->get();
@@ -19,6 +19,7 @@ class StudentController
     public function create(Request $request)
     {
         $data = $request->only(['name', 'course', 'age']);
+
         return $this->student->create($data);
     }
 

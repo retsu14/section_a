@@ -9,7 +9,7 @@ class StudentService
     // dependency injection
     public function __construct(
         private StudentRepository $studentRepository
-    ){}
+    ) {}
 
     public function get()
     {

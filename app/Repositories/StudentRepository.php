@@ -24,5 +24,5 @@ class StudentRepository
     }
 
     // update student
-    
+
 }
